@@ -1,0 +1,2 @@
+# Robot-Manual-Control
+We are going to control 12v johnson motor via web controls using Raspberry Pi. We require 20A motor driver as these are high powered gear motors. DUAL DC MOTOR DRIVER 20A which is useful for these dc geared motors. We can control 2 motors or 4 when connected pair of two in parallel. Its is having 6 signal pins, 3 for each motor containing PWM, DIR and BRK. Read more about Motor driver on given link.
