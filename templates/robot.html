@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div style=" height:400px; width:600px; float:left;">
+<center>
+<h1><span style="color:#fc2803;">3NOT ROBOTICS PVT LTD</span>
+<h2>Robot - Manual Control</h2><br><br>
+<a href="#" id="up" style="font-size:30px;text-decoration:none;">  <br>FORWARD</a><br><br></center>
+<a href="#" id="left" style="font-size:30px;text-decoration:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;LEFT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs$
+<a href="#" id="right" style="font-size:30px; text-decoration:none;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RIGHT </a><br><br>
+<center><a href="#" id="down" style="font-size:30px;text-decoration:none;"> BACKWARD<br> </a></center>
+</div>
+
+<script>
+$( document ).ready(function(){
+    $("#down").on("mousedown", function() {
+     $.get('/down_side');
+     }).on('mouseup', function() {
+     $.get('/stop');
+    });
+    $("#up").on("mousedown", function() {
+     $.get('/up_side');
+     }).on('mouseup', function() {
+     $.get('/stop');
+    });
+    $("#left").on("mousedown", function() {
+     $.get('/left_side');
+     }).on('mouseup', function() {
+     $.get('/stop');
+    });
+    $("#right").on("mousedown", function() {
+     $.get('/right_side');
+     }).on('mouseup', function() {
+     $.get('/stop');
+    });
+});
+</script>
+
+</body>
+</html>
+
+
